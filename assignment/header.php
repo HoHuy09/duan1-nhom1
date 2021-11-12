@@ -142,7 +142,7 @@ $thuonghieu = select_page($sql);
                                 </ul>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Giới Thiệu</a>
+                                <a href="gioithieu.php" class="header__nav-link">Giới Thiệu</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="#" class="header__nav-link">Tin Tức</a>
