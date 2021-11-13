@@ -2,6 +2,10 @@
 require_once 'libs/libs.php';
 $sql = "SELECT * FROM tin_tuc ORDER BY ma_tin_tuc desc limit 6";
 $tintuc = select_page($sql);
+$sql = "SELECT * FROM danh_muc";
+$listRecord = select_page($sql);
+$sql = "SELECT * FROM thuong_hieu";
+$thuonghieu = select_page($sql);
 ?>
 
 <!doctype html>
@@ -209,7 +213,7 @@ $tintuc = select_page($sql);
                             <a href="tintuc_detail.php/id=<?= $item['ma_tin_tuc'] ?>" class="stretched-link">Xem chi tiết</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" src="<?= $item['anh'] ?>" width="200" height="250">
+                            <img class="bd-placeholder-img" src="<?= $item['anh'] ?>" width="400" height="200">
 
 
                             </img>
