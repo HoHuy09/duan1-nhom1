@@ -73,7 +73,7 @@ require_once 'header.php';
         </p>
     </div>
     <div class="banner">
-        <img src="./img/banner-dong-ho-1.jpg"  alt="">
+        <img src="./img/banner-dong-ho-1.jpg"  alt="" >
     </div>
     <div class="bottom">
     <h3>Chính sách bảo hành</h3>

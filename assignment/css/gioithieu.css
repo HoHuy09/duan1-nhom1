@@ -1,5 +1,6 @@
 .container{
     width: auto;
+    margin-left: 50px;
 }
 @font-face {
     font-family: font;
@@ -22,6 +23,7 @@
 .banner img{
     margin-left: 150px;
     width: 1200px;
+    height: 700px;
 }
 .top{
     margin: 15px;
