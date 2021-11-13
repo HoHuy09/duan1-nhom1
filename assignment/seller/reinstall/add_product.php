@@ -1,7 +1,8 @@
 <?php 
+        
         require_once '../../libs/libs.php';
         require_once '../../libs/upload_file.php';
-
+       
         $listCate = select_danh_muc();  
 
         $sql = 'SELECT id_th, ten_th FROM thuong_hieu';
@@ -38,17 +39,18 @@
 ?>
 
     <?php  require_once '../nav_left-part.php'; ?>
+    
             <!-- content right -->
             <div class="wrapper__content">
                 <!-- header -->
                 <div class="content_header">
                     <h1 class="content__header-name">Quản lý website</h1>
-                    <a href="/PHP1/assignment/index.php" class="content__link-logout">
+                    <a href="/duan1-nhom1/assignment/index.php" class="content__link-logout">
                         Trang Chủ
                         <i class="fas fa-sign-out-alt"></i>
                     </a>
                 </div>
-
+                
                 <!-- form add info product -->
                 <div class="content__box">
                     <form action="" class="content__box-product-add" method="POST" enctype="multipart/form-data">

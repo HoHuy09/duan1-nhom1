@@ -23,7 +23,7 @@ $comment = count_all($sql);
 <div class="wrapper__content">
     <div class="content_header">
         <h1 class="content__header-name">Quản lý website</h1>
-        <a href="/PHP1/assignment/index.php" class="content__link-logout">
+        <a href="/duan1-nhom1/assignment/index.php" class="content__link-logout">
             Trang Chủ
             <i class="fas fa-sign-out-alt"></i>
         </a>

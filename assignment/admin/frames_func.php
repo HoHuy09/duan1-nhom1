@@ -2,7 +2,7 @@
 session_start();
 $session = isset($_SESSION['user']) ? $_SESSION['user'] : "";
 if (empty($session) || $session['roles'] != 1) {
-    header("location:" . "/PHP1/assignment" . "/admin/login.php");
+    header("location:" . "/duan1-nhom1/assignment" . "/admin/login.php");
 }
 require_once 'nav_left.php';
 $page_layout = isset($_GET['page_layout']) ? $_GET['page_layout'] : '';
@@ -25,6 +25,9 @@ switch ($page_layout) {
         break;
     case 'comment':
         require_once 'table_comment.php';
+        break;
+    case 'tintuc':
+        require_once 'table_tintuc.php';
         break;
     default:
         require_once 'setting.php';

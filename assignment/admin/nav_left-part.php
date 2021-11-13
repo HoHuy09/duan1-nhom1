@@ -72,5 +72,11 @@
                             <span class="nav__link-txt">Comment</span>
                         </a>
                     </li>
+                    <li class="nav__item">
+                        <a href="../frames_func.php?page_layout=tintuc" class="nav__link">
+                            <i class="fa fa-book" aria-hidden="true"></i>                         
+                            <span class="nav__link-txt">Tin Tức</span>
+                        </a>
+                    </li>
                 </ul>
             </div>

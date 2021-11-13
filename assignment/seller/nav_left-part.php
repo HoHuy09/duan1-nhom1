@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +19,10 @@
             <!-- nav left -->
             <div class="wrapper__nav">
                 <div class="nav__header">
-                    <a href="../frames_func.php" class="nav__header-link">
-                        <img src="/projects/img/logo.jpg" alt="" class="nav__header-img">
+                <a href="frames_func.php" class="nav__header-link">
+                        <img src="../../img/<?= $_SESSION['user']['avatar']?>" alt="" class="nav__header-img">
                     </a>
-                    <span class="nav__header-author">Admin</span>
+                    <span class="nav__header-author"><?= $_SESSION['user']['name']?></span>
                 </div>
                 <div class="nav__name">
                     <h1 class="nav__name-header">Danh mục</h1>
@@ -55,6 +58,12 @@
                         <a href="../frames_func.php?page_layout=comment" class="nav__link">
                             <i class="fas fa-comments"></i>                         
                             <span class="nav__link-txt">Comment</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../frames_func.php?page_layout=tintuc" class="nav__link">
+                            <i class="fa fa-book" aria-hidden="true"></i>                         
+                            <span class="nav__link-txt">Tin Tức</span>
                         </a>
                     </li>
                 </ul>

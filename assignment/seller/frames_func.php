@@ -2,7 +2,7 @@
 session_start();
 $session = isset($_SESSION['user']) ? $_SESSION['user'] : "";
 if (empty($session) || $session['roles'] != 2) {
-    header("location:" . "/PHP1/assignment" . "/seller/login.php");
+    header("location:" . "/duan1-nhom1/assignment" . "/seller/login.php");
 }
 require_once 'nav_left.php';
 $page_layout = isset($_GET['page_layout']) ? $_GET['page_layout'] : '';
@@ -14,17 +14,14 @@ switch ($page_layout) {
     case 'product':
         require_once 'table_product.php';
         break;
-    case 'slide':
-        require_once 'table_slide.php';
-        break;
     case 'brand':
         require_once 'table_brand.php';
         break;
-    case 'user':
-        require_once 'table_user.php';
-        break;
     case 'comment':
         require_once 'table_comment.php';
+        break;
+    case 'tintuc':
+        require_once 'table_tintuc.php';
         break;
     default:
         require_once 'setting.php';

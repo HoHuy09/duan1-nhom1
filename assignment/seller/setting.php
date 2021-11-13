@@ -10,6 +10,12 @@ $product = count_all($sql);
 $sql = 'SELECT count(id_th) FROM thuong_hieu';
 $brand = count_all($sql);
 
+$sql = 'SELECT count(id_slide) FROM slide';
+$slide = count_all($sql);
+
+$sql = 'SELECT count(id_user) FROM user';
+$user = count_all($sql);
+
 $sql = 'SELECT count(id_bl) FROM binh_luan';
 $comment = count_all($sql);
 
@@ -17,7 +23,7 @@ $comment = count_all($sql);
 <div class="wrapper__content">
     <div class="content_header">
         <h1 class="content__header-name">Quản lý website</h1>
-        <a href="/PHP1/assignment/index.php" class="content__link-logout">
+        <a href="/duan1-nhom1/assignment/index.php" class="content__link-logout">
             Trang Chủ
             <i class="fas fa-sign-out-alt"></i>
         </a>
@@ -62,10 +68,7 @@ $comment = count_all($sql);
                     </div>
                 </div>
             </div>
-
-            <div class="row col row-2">
-                
-               
+            <br>
                 <div class="l-3 col box-represent">
                     <i class="fas fa-comments icon-represent"></i>
                     <div class="content__box-text">
