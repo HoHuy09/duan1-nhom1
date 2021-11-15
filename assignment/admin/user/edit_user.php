@@ -94,10 +94,6 @@
                             <label class="form-check-label" for="inlineCheckbox2">Seller</label>
                         </div>
                         <br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="3" name="roles">
-                            <label class="form-check-label" for="inlineCheckbox2">PostMan</label>
-                        </div>
                         <div class="content__box-product-add-btn" style="width: 452px">
                             <button class="content__box-product-btn" name="btnAdd">Sửa thông tin</button>
                         </div>
